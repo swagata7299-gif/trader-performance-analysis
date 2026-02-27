@@ -1,38 +1,70 @@
-# Trader Performance vs Market Sentiment Analysis
+# Trader Behavior vs Market Sentiment Analysis
 
-## Objective
+## Project Objective
+Analyze how trader behavior and performance change under different market sentiment conditions (Fear vs Greed).
 
-Analyze how market sentiment (Fear/Greed) affects trader behavior and performance.
+This project explores:
+- Performance differences across sentiment
+- Behavioral changes in traders
+- Trader segmentation
+- Strategy recommendations
+- Predictive modeling (bonus)
+
+---
 
 ## Dataset
+Two datasets were used:
+1. Trader transaction data
+2. Market sentiment data (Fear/Greed index)
 
-* Bitcoin Fear/Greed Index dataset
-* Historical Trader Data (Hyperliquid)
+Datasets were aligned at daily level.
+
+---
 
 ## Methodology
 
-* Data cleaning and preprocessing
-* Timestamp conversion and dataset alignment by date
-* Performance and behavior analysis
-* Trader segmentation
-* Insight generation and strategy recommendations
+### Data Preparation
+- Checked missing values and duplicates
+- Converted timestamps to datetime
+- Merged datasets by date
+- Created key metrics:
+  - Daily PnL
+  - Win rate
+  - Average trade size
+  - Trade frequency
+  - Leverage distribution
+  - Long/Short ratio
+
+### Analysis
+- Performance comparison across Fear vs Greed days
+- Trader behavior analysis
+- Trader segmentation:
+  - High vs low leverage traders
+  - Frequent vs infrequent traders
+  - Consistent vs inconsistent traders
+
+### Predictive Model (Bonus)
+- Random Forest classifier to predict trader profitability
+- Accuracy ≈ 61%
+
+---
 
 ## Key Insights
 
-* Trader performance varies with market sentiment.
-* Traders take larger positions during Greed markets.
-* Average win rate ~40% indicates high-risk trading environment.
+1. Trader performance differs across sentiment conditions.
+2. Traders increase trade frequency during high sentiment periods.
+3. High leverage traders show higher risk but inconsistent profitability.
+
+---
 
 ## Strategy Recommendations
 
-* Reduce trade size during Fear markets.
-* Increase trading activity cautiously during Greed markets.
+- Reduce leverage during Fear market conditions.
+- Increase trade activity only for consistent winners.
+- Avoid large position sizes during volatile sentiment.
 
-## Bonus
-
-* Predictive model to forecast trader profitability using market sentiment.
+---
 
 ## How to Run
 
-1. Upload datasets in notebook.
-2. Run all cells sequentially.
+
