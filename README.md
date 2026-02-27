@@ -68,3 +68,12 @@ Datasets were aligned at daily level.
 ## How to Run
 
 
+Follow these steps to reproduce the analysis.
+
+### 1. Clone the repository
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+git clone https://github.com/YOUR_USERNAME/trader-performance-analysis.git
+cd trader-performance-analysis
+
+
